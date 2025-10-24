@@ -9,3 +9,27 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/* Advance selector
+- child Siblig selector(>, +, ~)
+*/
+/* The divs with the class "child" will get selected by this */
+main > div {
+border: 2px solid rgb(207, 48, 207);
+}
+
+/* The grand-child elements */
+main > div > div {
+border: 2px solid orange;
+}
+/* using the + combinator */
+.group1 + div {
+    border: 2px solid green;
+}
+
+/* using the ~ combinator */
+.group1 ~ div {
+    border: 2px solid blue;
+}
+
+/*  Pseudo-selectors  */
+
