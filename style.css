@@ -33,3 +33,50 @@ border: 2px solid orange;
 
 /*  Pseudo-selectors  */
 
+
+/*Marker pseudo-element */
+ol li::marker {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+ul li::marker{
+    content: "👉 ";
+}
+h3 {
+    counter-increment: h3;
+    display: list-item;
+}
+
+h3::marker {
+  display: list-item;
+  content: "#" counter(h3) " ";
+  color: lightsalmon;
+}
+
+/* First-letter pseudo-element */
+h3::first-letter {
+  font-weight: bold;
+  color: red;
+}
+/* First-line pseudo-element */
+p::first-line {
+  letter-spacing: 2px;
+}
+/* Selection pseudo-element */
+p::selection {
+  background-color: yellow;
+  color: black;
+}
+/* Link pseudo-classes */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+/* before and after pseudo-elements */
+.greet::before {
+  content: "👋 ";
+}
+.greet::after {
+  content: " 😊";
+}
