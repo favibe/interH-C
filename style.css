@@ -80,3 +80,19 @@ a:link {
 .greet::after {
   content: " 😊";
 }
+/* Nth-child pseudo-class */
+li:nth-child(odd) {
+  background-color: lightgray;
+}
+li:nth-child(even) {
+  background-color: lightblue;
+}
+li:nth-child(3) {
+  font-weight: bold;
+  color: rgb(255, 0, 212);
+}
+li:nth-child(-n+2) {
+  font-style: italic;
+  color: green;
+}
+/* Attribute selectors */
