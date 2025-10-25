@@ -96,3 +96,56 @@ li:nth-child(-n+2) {
   color: green;
 }
 /* Attribute selectors */
+input[type="text"] {
+  border: 2px solid blue;
+  border-radius: 2px;
+  padding: 4px;
+}
+.container p:first-child::first-line {
+  color: red;
+}
+/* custom Css variables/propeeties */
+:root{
+  --main-bg-color: #f0f0f0;
+  --main-text-color: #333333;
+  --main-border-color: #cccccc;
+
+  --logo-border-radius: 8px var(--main-border-radius);
+}
+/* Using the custom properties */
+body {
+  background-color: var(--main-bg-color);
+  color:var(--main-text-color);
+  bottom: 2px solid var(--main-border-color);
+}
+/* The custom variables cascade. So you can override them
+it is best to write them in the root, first define them so they act
+like Global variables, and you can use them all over your css.
+but if you declare it on a specific html element styling(selelctor);
+ you can only use it to that specific css */
+
+
+/* Css Nesting */
+.card {
+  background: pink;
+  padding: 20px;
+
+
+  h2 {
+    color: purple;
+    margin-bottom: 10px;
+
+  }
+
+    button{
+      background: purple;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover{
+        background: darkmagenta;
+    }
+  }
+}
