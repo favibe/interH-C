@@ -149,3 +149,54 @@ but if you declare it on a specific html element styling(selelctor);
     }
   }
 }
+
+
+/* 🧩 Custom Properties */
+:root {
+  --main-color: #4f46e5;
+  --text-color: #222;
+  --bg-gradient: linear-gradient(135deg, #a78bfa, #4f46e5);
+}
+
+/* 🎯 Positioning + Layout */
+.profile {
+  width: 200px;
+  padding: 1.2rem;
+  text-align: center;
+  position: relative;
+  border-radius: 12px;
+  background: var(--bg-gradient);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📍 Absolute positioned badge */
+.profile::before {
+  content: "★";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+
+/* 🧠 Advanced selector (hover + attribute + nth-child) */
+.follow-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* 📐 CSS Function */
+.avatar {
+  width: min(100%, 100px);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 3px solid white;
+}
+
+/* 🪄 Extra: nth-child example */
+.profile:nth-child(1) {
+  border: 2px solid white;
+}
+
+/* 🌍 Browser Compatibility note:
+   Using 'min()' and CSS variables works in all modern browsers. */
