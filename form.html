@@ -21,6 +21,41 @@
         <input type="number" id="amount" name="amount" placeholder="Enter Amount" required>
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob">
+        <textarea id="address" name="address" rows="5" cols="30" placeholder="Enter your Address here.."></textarea>
+        <select id="fashion" name="fashion">
+            <optgroup label="Clothings">
+                <option value="t-shirt">T-Shirt</option>
+                <option value="sweater">Sweater</option>
+                <option value="jeans">Jeans</option>
+                <optgroup label="Foot Wears">
+                    <option value="sneakers">Sneakers</option>
+                    <option value="boots">Boots</option>
+                    <option value="sandals">Sandals</option>
+            </optgroup>
+        </select>
+        <!--Radio Buttons-->
+        <h2>Preferred Contact Method:</h2>
+        <div>
+            <input type="radio" id="contact-email" name="contact-type" value="email" checked>
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact-type" value="phone">
+            <label for="contact-phone">Phone</label>
+            <input type="radio" id="contact-mail" name="contact-type" value="mail">
+            <label for="contact-mail"> Mail</label>
+        </div>
+        <!--Checkboxes-->
+        <h2>Subscribe to Newsletters:</h2>
+        <div>
+            <input type="checkbox" id="news-daily" name="newsletter" value="daily" checked>
+            <label for="news-daily">Daily News</label>
+            <input type="checkbox" id="news-weekly" name="newsletter" value="weekly">
+            <label for="news-weekly">Weekly Digest</label>
+            <input type="checkbox" id="news-monthly" name="newsletter" value="monthly">
+            <label for="news-monthly"> Monthly Updates</label>
+        </div>
+
+        <!--Buttons-->
+        
 
     </form>
 </body>
